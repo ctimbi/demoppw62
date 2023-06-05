@@ -1,0 +1,21 @@
+{
+  "targets": {
+    "democontactos62": {
+      "hosting": {
+        "demoppw62": [
+          "democontactos62"
+        ]
+      }
+    },
+    "democonta6262": {
+      "hosting": {
+        "demoppw62": [
+          "democonta6262"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "democontactos62"
+  }
+}

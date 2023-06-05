@@ -11,11 +11,13 @@ import { ContactoService } from 'src/app/services/contacto.service';
 export class ListContactosComponent {
 
   listadoContactos: Contacto[] = []
+  listadoContactosFire: any;
 
   constructor(private contactoService: ContactoService,
       private router: Router) {
     this.listadoContactos = contactoService.getList()
     console.log('listadoContactos', this.listadoContactos)
+    this.listadoContactosFire = contactoService.getAll()
   }
 
   editar(contacto: Contacto){
