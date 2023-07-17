@@ -15,5 +15,11 @@
         <a (click)="editar(contacto)">{{contacto.cedula}} | {{contacto.nombre}} | {{contacto.direccion}}</a>
         <a href="" (click)="eliminar(contacto)">Eliminar</a>
     </li>
+
+    <hr/>
+    <li *ngFor="let contacto of listadoContactosWS | async">
+        <a (click)="editar(contacto)">{{contacto.cedula}} | {{contacto.nombre}} | {{contacto.direccion}}</a>
+        <a href="" (click)="eliminar(contacto)">Eliminar</a>
+    </li>
     
 </ul>

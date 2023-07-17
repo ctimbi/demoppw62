@@ -21,6 +21,7 @@ import { MatInputModule } from '@angular/material/input';
 import { MatDatepickerModule } from '@angular/material/datepicker';
 import { MatNativeDateModule } from '@angular/material/core';
 
+import { HttpClientModule } from '@angular/common/http'
 
 @NgModule({
   declarations: [
@@ -39,6 +40,7 @@ import { MatNativeDateModule } from '@angular/material/core';
     MatNativeDateModule,
     MatDatepickerModule,
     MatInputModule,
+    HttpClientModule,
     provideFirebaseApp(() => initializeApp(environment.firebase)),
     provideFirestore(() => getFirestore())
   ],
